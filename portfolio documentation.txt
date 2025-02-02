@@ -1,0 +1,44 @@
+## Drupal Portfolio Documentation
+
+# Installations needed (windows virtual machine ON)
+Docker Desktop / Composer installed
+DDEV installed
+Choco installed
+VSCode (required) or similar code editor
+
+
+# Setting up DDEV environment
+
+. Create the Project directory in your local machine, or clone a repository on github (git clone <repo-url> repo-name)
+. Change Dir  (cd) to the project folder
+. Initialize DDEV (ddev config) - provide the Project name and the docroot folder
+. Start the project (ddev start)
+. Installation of the dependancies (ddev composer install) and of Drush (ddev composer require drush/drush)
+. Installation of Drupal: you can use ddev drush or proceed with installation on the browser
+. Setup files permission if your user doesn't have it (ddev exec chmod -R 775 web/sites/default/files)
+
+After all the bellow, you can now clear the cache by runing ddev drush cr the ddev launch to launch the site
+
+
+
+## Key Customizations
+
+Theme customisation: the Base Theme (Olivero)
+    Created a new theme named portfolio
+     added the .info.yml file (the required configeration file for Drupal theme creation, containing the theme name - description - base theme - regions - libraries ...)
+     the .libraries.yml file holds all the css/sass - js libraries that work to customize/override the global styling and behavior
+
+Module creation
+    created a portfolio block custom module
+    added a portfolio_block.info.yml file as the required configiration file fo the custom module
+    It helps add a custom block to display the latest 3 Portfolio items dynamically
+    Also created a PortfolioBlock.php where we provided the namespaces - class - methodes... that help the custom block to display the latest 3 Portfolio items dynamically
+
+Used twig templates:
+    node.html.twig - to override Olivero's theme way to display a node
+    page.html.twig - to override the olivero base theme way of displaying a page
+
+Used css files to help override the base theme global stylings from the header - body/content - to the footer
+
+
+    
