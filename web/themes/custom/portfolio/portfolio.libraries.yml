@@ -1,0 +1,13 @@
+header-footer:
+  css:
+    theme:
+      css/header-navigation.css: {}
+      css/nav-primary.css: {}
+      css/site-header.css: {}
+      css/site-footer.css: {}
+
+main-content:
+  css:
+    theme:
+      css/main-content.css: {}
+      

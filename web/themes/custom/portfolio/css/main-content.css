@@ -1,0 +1,172 @@
+/* Styling the main content */
+
+:root,
+body {
+  --font-sans: "roboto", sans-serif;
+}
+
+:root {
+  --grid-col-count: 2;
+  --grid-gap: var(--sp1);
+}
+
+.main-content,
+.page-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hiro-sec {
+  background-image: url("https://myportfolio.ddev.site/sites/default/files/2025-01/Hiro-image_0.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  justify-items: center;
+  display: grid;
+  margin-top: auto;
+  align-items: center;
+  color: #fff;
+}
+
+.hiro-sec h2 {
+  font-size: 65px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .hiro-sec h2 {
+    font-size: 40px;
+  }
+  .paragraph .field img {
+    max-width: 100%;
+  }
+  .layout--twocol-section,
+  .layout--threecol-section {
+    gap: 30px;
+  }
+
+  .view,
+  .view-content {
+    gap: inherit;
+    --grid-col-count: 1;
+  }
+
+  .node--type-portfolio {
+    padding: 40px 20px 0px;
+    padding-block-end: 1px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .view,
+  .view-content {
+    gap: var(--sp3);
+  }
+
+  .views-view-grid--horizontal {
+    display: block !important;
+    text-align: center;
+    /* --views-grid--column-count: 1; */
+  }
+
+  .views-view-grid--horizontal img {
+    justify-self: anchor-center;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  margin-block: 0px;
+}
+
+.paragraph .field img {
+  width: -webkit-fill-available;
+  max-width: 100%;
+}
+
+/* Styling the view content */
+
+.view,
+.view-content {
+  gap: var(--sp0);
+}
+
+.views-view-grid--horizontal {
+  display: flex;
+  gap: 40px;
+}
+
+.views-view-grid--horizontal .views-view-grid__item {
+  background: #b3b3b3;
+  padding: 30px;
+  border-radius: 15px;
+  margin-block-end: 30px;
+}
+
+.views-view-grid--horizontal .views-view-grid__item div .field-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Styling Layout columns - gaps */
+.layout--twocol-section {
+  gap: 70px;
+}
+
+.layout--threecol-section {
+  gap: 50px;
+}
+
+/* Styling paragraph images */
+
+.paragraph .field img {
+  width: 100%;
+}
+
+/* Styling the About node title section */
+
+.node--type-about-section .node__title,
+.node--type-portfolio .node__title {
+  display: none;
+}
+
+.node--type-portfolio {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px 0px;
+  margin-bottom: 20px;
+  padding-block-end: 0px;
+}
+
+/* Styling the Portfolio Block items */
+
+.portfolio-list-items li,
+.portfolio-list-items li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.block__title {
+  font-size: 20px;
+}
+
+.block-views-blockrecent-portfolio-items-block-1 {
+  padding-top: 40px;
+}
+
+.block-views-blockrecent-portfolio-items-block-1 .block__title {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+.block-views-blockrecent-portfolio-items-block-1 img {
+  margin-top: 20px;
+}

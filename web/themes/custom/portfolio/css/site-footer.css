@@ -1,0 +1,26 @@
+/* Styling footer */
+
+body:not(.is-always-mobile-nav) .site-footer{
+    border-inline-start: none;
+}
+
+.site-footer{
+    background: #4D4B4B;
+    color: #fff;
+}
+
+.site-footer a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.region--footer_top__inner{
+    align-items: center;
+    grid-column: 1 / 15;
+    margin:auto;
+    padding: 50px 0px;
+}
+
+.site-footer__inner{
+    padding-block: inherit;
+}

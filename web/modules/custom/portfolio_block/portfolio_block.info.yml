@@ -1,0 +1,8 @@
+name: 'Portfolio Block'
+type: module
+description: 'This is the custom module that will help add a custom block to display the latest 3 Portfolio items dynamically.'
+core_version_requirement: ^10 || ^11
+package: Custom Module
+dependencies:
+  - drupal:block
+  - drupal:node
