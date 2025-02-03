@@ -55,5 +55,5 @@ To ACCESS your local site visit the project url in the browser. Get the descript
     page.html.twig - to override the olivero base theme way of displaying a page
 
 # Used CSS files:
-    to help override the base theme global stylings from the header - body/content - to the footer
+    to help override the base theme global stylings and customise our custom theme from the header - body/content - to the footer
   
