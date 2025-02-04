@@ -1,0 +1,23 @@
+/* Styling the Contat Form */
+
+form {
+  max-width: 70%;
+  margin-left: 15%;
+}
+
+[type="email"], [type="text"], textarea{
+  width: 100%;
+}
+
+.button--primary{
+  border-radius: 18px;
+}
+
+
+@media (max-width: 48rem) {
+  form {
+  max-width: 100%;
+  justify-items: center;
+  margin-left: 0%;
+}
+}

@@ -17,4 +17,6 @@
 .site-header{
   min-height:auto;
   background: #4D4B4B;
+  --grid-gap: var(--sp0);
+
 }

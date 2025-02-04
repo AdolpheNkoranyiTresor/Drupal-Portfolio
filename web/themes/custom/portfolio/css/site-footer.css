@@ -19,8 +19,16 @@ body:not(.is-always-mobile-nav) .site-footer{
     grid-column: 1 / 15;
     margin:auto;
     padding: 50px 0px;
+
 }
 
 .site-footer__inner{
     padding-block: inherit;
+}
+
+
+@media (max-width: 48rem) {
+    .site-footer__inner{
+    justify-items: center;
+}
 }

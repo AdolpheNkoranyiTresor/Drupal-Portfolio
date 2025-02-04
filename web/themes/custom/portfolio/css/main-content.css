@@ -36,6 +36,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  :root {
+    --grid-col-count: 3;
+  }
+
   .hiro-sec h2 {
     font-size: 40px;
   }

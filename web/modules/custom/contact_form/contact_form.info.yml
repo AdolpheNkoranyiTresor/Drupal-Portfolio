@@ -1,0 +1,7 @@
+name: 'Contact Form'
+type: module
+description: 'This is a custom contact form module with inputs accessed only by trusted users'
+core_version_requirement: ^10 || ^11
+package: Custom Module
+dependencies:
+  - drupal:contact

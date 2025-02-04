@@ -20,4 +20,5 @@ regions:
 libraries:
   - portfolio/header-footer
   - portfolio/main-content
+  - portfolio/contact_form
 

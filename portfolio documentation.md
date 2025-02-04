@@ -45,10 +45,12 @@ To ACCESS your local site visit the project url in the browser. Get the descript
      the .libraries.yml file holds all the CSS/sass - js libraries that work to customize/override the global styling and behavior
 
 # Module creation
-    created a portfolio block custom module
+- created a portfolio block custom module
     added a portfolio_block.info.yml file as the required configiration file fo the custom module
     It helps add a custom block to display the latest 3 Portfolio items dynamically
     Also created a PortfolioBlock.php where we provided the namespaces - class - methods... that help the custom block to display the latest 3 Portfolio items dynamically
+
+- created a Contact Form (contact_form) custom module to provide a simple contact form using the Form API. The form collects name, email, and message and stores submissions in a custom database table. Permissions were defined in contact_form.permissions.yml to restrict access to viewing submissions. A route (/contact-submissions) was added in contact_form.routing.yml, and a controller (ContactFormController.php) retrieves and displays submissions for users with the "View Contact Form Submissions" permission. The form does not check permissions in the submit handler, ensuring unrestricted submissions while securing access to stored responses.
 
 # Used twig templates:
     node.html.twig - to override Olivero's theme way to display a node
