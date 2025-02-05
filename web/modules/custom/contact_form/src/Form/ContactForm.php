@@ -22,7 +22,7 @@ class ContactForm extends FormBase {
 
         $form['heading'] = [
             '#div' => $this->t('<div>'),
-            '#markup' => $this->t('<h2>Contact Me</h2>'),
+            '#markup' => $this->t('<h2>Get in touch:</h2>'),
         ];
 
         $form['name'] = [

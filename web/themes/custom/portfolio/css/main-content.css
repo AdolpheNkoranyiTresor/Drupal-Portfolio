@@ -120,6 +120,11 @@ h6 {
   font-size: 20px;
 }
 
+.views-view-grid__item-inner {
+  display: grid;
+  row-gap: 20px;
+}
+
 /* Styling Layout columns - gaps */
 .layout--twocol-section {
   gap: 70px;
@@ -133,6 +138,12 @@ h6 {
 
 .paragraph .field img {
   width: 100%;
+}
+
+/* Styling the node */
+
+.node__content{
+  background: #d5d5d5;
 }
 
 /* Styling the About node title section */
