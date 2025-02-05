@@ -52,10 +52,10 @@ To ACCESS your local site visit the project url in the browser. Get the descript
 
 - created a Contact Form (contact_form) custom module to provide a simple contact form using the Form API. The form collects name, email, and message and stores submissions in a custom database table. Permissions were defined in contact_form.permissions.yml to restrict access to viewing submissions. A route (/contact-submissions) was added in contact_form.routing.yml, and a controller (ContactFormController.php) retrieves and displays submissions for users with the "View Contact Form Submissions" permission. The form does not check permissions in the submit handler, ensuring unrestricted submissions while securing access to stored responses.
 
-# Used twig templates:
+# Use of twig templates:
     node.html.twig - to override Olivero's theme way to display a node
     page.html.twig - to override the olivero base theme way of displaying a page
 
-# Used CSS files:
+# Use of CSS files:
     to help override the base theme global stylings and customise our custom theme from the header - body/content - to the footer
   
