@@ -59,3 +59,11 @@ To ACCESS your local site visit the project url in the browser. Get the descript
 # Use of CSS files:
     to help override the base theme global stylings and customise our custom theme from the header - body/content - to the footer
   
+
+## Project screenshots:
+
+![Homepage](Home.png)
+![About Me](About.png)
+![My services](Services.png)
+![Portfolio](Portfolio.png)
+![Contact](contact.png)
